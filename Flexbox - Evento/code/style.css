@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Delius", cursive;
+    color: white;
+}
+
+/*----------------------HEADER-----------------------*/
+header{
+    background: url("images/slider/bg1.jpg") no-repeat center;
+    background-size: cover;
+    height: 800px;
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.drustvene_mreze{
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px;
+}
+
+.drustvene_mreze i{
+    font-size: 26px;
+    margin: 5px 16px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.drustvene_mreze i:nth-child(2):hover{
+    color: #3b5998
+}
+
+.drustvene_mreze i:nth-child(1):hover{
+    color: #1DA1F2;
+}
+
+.drustvene_mreze i:nth-child(3):hover{
+    color: #FF0000;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding-right: 20px;
+    align-items: center;
+    background: rgba(48, 155, 194, 0.75);
+}
+
+.logo{
+    background: rgba(48, 155, 194, 0.75);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+nav li{
+    display: flex;
+}
+
+nav a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    background-color: white;
+    color: rgba(48, 155, 194, 0.85);
+}
+
+header > div:last-of-type{
+    background: rgba(0,0,0,0.6);
+    width: max-content;
+    padding: 25px;
+    position: relative;
+    top: 450px;
+    line-height: 1.9;
+}
+
+header > div:last-of-type a{
+    text-decoration: none;
+    color: #309bc2;
+}

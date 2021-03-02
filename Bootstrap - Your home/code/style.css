@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #666;
+    font-family: Arial;
+}
+
+.container {
+    max-width: 1000px;
+    margin-bottom: 30px;
+}
+
+.container-fluid {
+    border-bottom: 1px solid lightgrey;
+}
+
+button {
+    background: #009b97;
+    border: none;
+    color: white;
+    float: right;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: 0.4s;
+}
+
+button:hover {
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+}
+
+
+/*-------------NAVIGACIJA-------------*/
+#logo {
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+    width: 72%;
+    margin-top: 10px;
+}
+
+nav li {
+    float: left;
+    padding: 40px;
+    width: 20%;
+    border-right: 1px solid lightgrey;
+    text-align: center;
+}
+
+nav li:last-child {
+    border: none;
+}
+
+nav a:link, a:visited {
+    color: #009b97;
+    text-decoration: none;
+}
+
+nav li:hover {
+    font-weight: bold;
+    background: linear-gradient(to bottom, white 10%, rgb(216, 216, 216), white 90%);
+    border-bottom: #009b97 2px solid;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+
+/*-------------HEADER-------------*/
+header img {
+    width: 100%;
+}
+
+header > div:first-of-type {
+    position: relative;
+}
+
+header > div:first-of-type p{
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+}
+
+header > div:last-of-type {
+    text-align: center;
+    margin-top: 50px;
+}
+
+header > div:last-of-type p {
+    font-size: 20px;
+}
+
+h1 {
+    color: #009b97;
+    text-shadow: -2px -2px black;
+    font-size: 52px;
+}
+
+
+/*-------------DIO SA SLIKAMA-------------*/
+h2 {
+    color: #009b97;
+    text-align: center;
+    font-size: 42px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.slike .row {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.slike {
+    text-align: center;
+}
+
+.slike img {
+    width: 100%;
+}
+
+
+/*-------------SERVICES-------------*/
+h3 {
+    color: #009b97;
+    font-size: 28px;
+}
+
+.services {
+    width: 100%;
+}
+
+.services img {
+    width: 100%;
+}
+
+.services p, li {
+    font-size: 14px;
+}
+
+.services ul {
+    list-style-position: inside;
+    line-height: 1.8;
+}
+
+
+/*-------------IKONE FOOTER-------------*/
+footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.fa-facebook-f {
+    color: white;
+    background: #597d9a;
+    border: 2px solid #316894;
+    padding: 20px 25px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.fa-google-plus-g {
+    background: #f37772;
+    border: 2px solid #d2716d;
+    color: white;
+    padding: 20px;
+    border-radius: 100%;
+    margin-left: 5px;
+}
+
+
+@media only screen and (max-width: 576px) {
+    nav ul {
+        display: none;
+    }
+
+    #logo {
+        float: none;
+        text-align: center;
+    }
+
+    .slike img {
+        margin-bottom: 20px;
+    }
+
+    header > div:first-of-type p {
+        padding: 6px;
+    }
+
+    .services .row div {
+        padding-bottom: 50px;
+    }
+
+    .services button {
+        margin-top: -10px;
+    }
+}
